@@ -1,0 +1,16 @@
+---
+- name: "test"
+  gather_facts: yes
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: "test"
+      zulip:
+        zuliprc_file_path: "./zuliprc"
+        content: "test"
+        notify_users:
+          - "driaan@envisage.co.za"
+        notify_streams:
+          - "Monitors"
+
+
