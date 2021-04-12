@@ -1,16 +1,16 @@
 ---
-- name: "test"
+- name: "Example Playbook"
   gather_facts: yes
   hosts: localhost
   connection: local
   tasks:
-    - name: "test"
+    - name: "Example Zulip message"
       zulip:
         zuliprc_file_path: "./zuliprc"
-        content: "test"
+        content: "A message from Ansible!"
         notify_users:
-          - "driaan@envisage.co.za"
+          - "john@example.com"
         notify_streams:
-          - "Monitors"
+          - "Coolest Stream"
 
 
