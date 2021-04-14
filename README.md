@@ -4,6 +4,7 @@
 
 To install this plugin locally, clone this repo and copy the file ```zulip.py``` to an ansible module location.
 Eg. ```~/.ansible/plugins/modules/zulip.py```.
+Eg. ```/usr/share/ansible/plugins/modules/```
 
 ## Usage
 
